@@ -1,8 +1,12 @@
 body {
-    background: url('../img/background.jpg');
-    background-repeat: unset;
+    background: url('../img/bg.jpeg');
+    background-size: cover;
     background-attachment: fixed;
-    margin-top: 105px; }
+    margin-top: 75px; }
+
+section {
+  margin: 10px;
+}
 
 hr {
   border: 0;
@@ -18,7 +22,7 @@ hr {
     .navbar {
       box-shadow: 2px 2px 5px #3292a6;
       opacity: 0.9;
-      background: #fff; }
+      background: #fff;}
     .navbar .nav-item{
       font-size: 1.4rem;
       padding-right: 1.4rem;}
@@ -139,8 +143,7 @@ hr {
 
   .thumbnail {
     position: relative;
-    min-width: 300px;
-    min-height: 300px;
+    padding-bottom: 100%;
     overflow: hidden;
     transition: .3s ease;
   }

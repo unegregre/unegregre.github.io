@@ -20,7 +20,7 @@
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav">
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-2" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img src="img/mlogo.png" width="50" height="50" alt="">
@@ -340,7 +340,7 @@
         if(img.height>img.width) {
           img_class="img-fluid card-img-top portrait";
         } else {
-          img_class="img-fluid card-img-top";
+          img_class="img-fluid card-img-top paysage";
         }
       html+=`<div class="card-container">
               <div class="card bg-dark text-white view overlay zoom">
@@ -382,7 +382,7 @@
                     </a>`,
         responsive: [
           {
-            breakpoint: 1280,
+            breakpoint: 1400,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
@@ -391,10 +391,10 @@
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 800,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 2
+              slidesToScroll: 1
             }
           }
           ]
