@@ -19,11 +19,11 @@
   <title>Emilie Hummel</title>
 </head>
 
-<body id="home" data-spy="scroll" data-target="#main-nav">
+<body id="home" class="dark-overlay" data-spy="scroll" data-target="#main-nav">
   <nav class="navbar navbar-expand-md navbar-light fixed-top py-2" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="img/mlogo.png" width="50" height="50" alt="">
+        <img src="img/btn.png" width="50" height="50" alt="">
         <h3 class="d-inline align-middle">Emilie Hummel</h3>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -35,7 +35,7 @@
             <a href="#home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">A propos</a>
+            <a href="#about" class="nav-link">À propos</a>
           </li>
           <li class="nav-item">
             <a href="#projects" class="nav-link">Projects</a>
@@ -49,7 +49,7 @@
   </nav>
 
   <!-- SHOWCASE -->
-    <section id="showcase" class="col-md-8 offset-md-2">
+    <section id="showcase">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -95,26 +95,36 @@
 
   <!-- About me -->
   <div class="col-md-7 offset-md-2"> 
-    <section id="about" class="text-white py-5">
-      <div class="container">
-        <div class="row text-justify">
-          <div class="col-md-3">
-
+    <section id="about">
+      <div class="container color-secondary-1-0">
+        <div class="row text-justify text-white pt-4">
+          <div class="col-md-3 py-4 text-center">
+            <img src="./img/Photo_Emilie Hummel.png" alt="" width="200em">
           </div>
-          <div class="col-md-9">
-            <h1>Emilie Hummel</h1>
-            <p>Je suis étudiante blablablah j'aime l'informatique et dessiner</p>
+          <div class="col-md-9 py-4 pr-5 text-justify">
+            <h1 class="color-secondary-1-3">Emilie Hummel</h1>
+            <p>Je suis étudiante en informatique à l'INSA Rennes depuis 2016 avec comme spécialités les Médias et Intéractions, l'Intelligence Artificielle et l'IoT. 
+              J'ai également eu la chance de partir pour un semestre à l'Université de Roskilde pour compléter ma formation. 
+              <br/>
+              J'ai pu réalisé au cours de mes études de nombreux projets dont vous trouverez une présentation ci-dessous. Je suis aussi passionnée d'art et exerce cette passion durant mon temps libre.</p>
           </div>
         </div>
+        <hr class="color-secondary-1-2">
         <div class="row">
           <div class="col-md-4 text-center">
-            <p>lien Linkedin</p>
+            <a href="" class="nav-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
           <div class="col-md-4 text-center">
-            <p>lien github</p>
+            <a href="" class="nav-link" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
           <div class="col-md-4 text-center">
-            <p>lien mail</p>
+            <a href="" class="nav-link" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -123,14 +133,13 @@
 
   <!-- Projects -->
   <div class="col-md-7 offset-md-3">
-    <section id="projects" class="py-5 text-white">
-      <div class="container">
-        <h1>Projets</h1>
-        <br/>
-        <div>
+    <section id="projects">
+      <h1 class="text-center text-white py-3" id="header-project">Projets</h1>
+      <div class="container py-5 color-primary-0">
+        <div class="text-white">
           <div class="row">
             <div class="col-md-8 text-left">
-              <a href="">Projet n°1</a>
+              <a href="" class="color-primary-2"><h3>Projet n°1</h3></a>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel neque voluptate laudantium aspernatur esse quidem iusto velit asperiores doloribus! Ea est mollitia atque a perspiciatis corporis, ad repellendus quis aut?</p>
               <button class="btn btn-sm btn-outline-light" disabled>Test</button>
               <button class="btn btn-sm btn-outline-light" disabled>Test</button>
@@ -141,25 +150,25 @@
             </div>
           </div>
     
-          <hr>
+          <hr class="color-primary-3">
     
           <div class="row">
             <div class="col-md-4 text-left">
               <img src="./img/image2.jpg" height="150">
             </div>
             <div class="col-md-8 text-right">
-              <a href="">Projet n°2</a>
+              <a href="" class="color-primary-2"><h3>Projet n°2</h3></a>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel neque voluptate laudantium aspernatur esse quidem iusto velit asperiores doloribus! Ea est mollitia atque a perspiciatis corporis, ad repellendus quis aut?</p>
               <button class="btn btn-sm btn-outline-light" disabled>Test</button>
               <button class="btn btn-sm btn-outline-light" disabled>Test</button>
             </div>
           </div>
         </div> 
-        <div class="collapse mb-5" id="collapse-btn-1">
-          <hr>
+        <div class="collapse mb-5 text-white" id="collapse-btn-1">
+          <hr class="color-primary-3">
           <div class="row">
             <div class="col-md-8 text-left">
-              <a href="">Projet n°3</a>
+              <a href="" class="color-primary-2"><h3>Projet n°3</h3></a>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel neque voluptate laudantium aspernatur esse quidem iusto velit asperiores doloribus! Ea est mollitia atque a perspiciatis corporis, ad repellendus quis aut?</p>
               <button class="btn btn-sm btn-outline-light" disabled>Test</button>
               <button class="btn btn-sm btn-outline-light" disabled>Test</button>
@@ -171,7 +180,7 @@
         </div>
 
         <a href="" class="offset-md-6 " data-toggle="collapse" data-target="#collapse-btn-1" id="show-more">
-          <img src="img/btn.png" width="20" height="20">
+          <img src="img/btn.png" width="30" height="30">
         </a>
       </div>
     </section>
@@ -183,13 +192,15 @@
 
   <!-- Graphisme -->
   <div class="col-md-7 offset-md-2">
-    <section id="graphism" class="text-white py-5">
-      <h1 class="text-center">Graphisme</h1>
-      <p class="text-center">Voici un aperçu de divers dessins et illustrations réalisés durant mon temps libre, à titre personnel mais aussi pour diverses associations telles que le FOG ou le club d'art de l'INSA Rennes.</p>
+    <section id="graphism" class="text-white">
+      <div class="color-secondary-2-0">
+        <h1 class="text-center text-white py-3" id="header-graphism">Graphisme</h1>
+        <p class="text-center text-white pt-3 px-5">Voici un aperçu de divers dessins et illustrations réalisés durant mon temps libre, à titre personnel mais aussi pour diverses associations telles que le FOG ou le club d'art de l'INSA Rennes.</p>
 
-      <!-- SLIDER -->
-      <div class="container">
-        <div class="graphism-slider" id="display-graphism">
+        <!-- SLIDER -->
+        <div class="container pb-5">
+          <div class="graphism-slider px-5" id="display-graphism">
+          </div>
         </div>
       </div>
   </section>
@@ -292,6 +303,7 @@
       // folder of the images to display
       var path="./img/dessins/" ;
       // array of the images names
+      // to resize: https://www.iloveimg.com/resize-image
       var images=new Array( "Paysage neige partie 1.png",
                             "Pull_4INFO_blanc.png",
                             "Paysage neige partie 2.png",
@@ -324,11 +336,30 @@
                             "Illustration Impa",
                             "Affiche Art-elier",
                             "Logo t-shirt InsaLan",
-                            "Grenatite - Personnage de jeu vidéo",
+                            "Grenatite - Personnage fictif",
                             "Illustration Papo & Yo",
                             "Illustration Harley Quinn",
                             "Portrait de Dean O'Gorman",
                             "Paysage automnal");
+
+      var dates=new Array(  "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018",
+                            "mai 2018");
       
       var html ="";
       var img = new Image();
@@ -350,8 +381,9 @@
                     </div>
                   </div>
                 </a>
-                <div class="card-body border-top text-center">
-                  <p>`+titles[i]+`</p>
+                <div class="card-body text-center pt-3">
+                  <h5>`+titles[i]+`</h5>
+                  <p class="color-secondary-2-2">`+dates[i]+`</p>
                 </div>
               </div>
             </div>
