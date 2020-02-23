@@ -17,11 +17,13 @@
 .color-secondary-2-4 { color: #2A8E44 }
 
 body {
-  background: url('../img/bg.png');
+  background: url('../img/bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   margin-top: 75px; 
   font-size: 1em;
+  font: "Raleway" ;
+  font-weight: 400;
   }
 
 section {
@@ -46,20 +48,8 @@ a:hover {
   border: 1px solid;
 }
 
-h1 {
-  font-size: 1.1em;
-}
-
-h2 {
-  font-size: 1.1em;
-}
-
-h3 {
-  font-size: 1.1em;
-}
-
-h4 {
-  font-size: 1.1em;
+h1, h2, h3, h4, h5 {
+  font-family: 'Ubuntu';
 }
 
 h5 {
@@ -85,7 +75,15 @@ h5 {
     }
   
   #showcase {
-    position: relative;}
+    position: relative;
+  }
+
+  #showcase p {
+    font: "Raleway" ;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
 
       .carousel-item {
         height: 450px;
@@ -96,7 +94,7 @@ h5 {
       }
       
       .carousel-image-1 {
-        background: url('../img/info.png');
+        background: url('../img/info.jpg');
         background-size: cover;
       }
       
@@ -106,7 +104,7 @@ h5 {
       }
       
       .carousel-image-3 {
-        background: url('../img/brush.png');
+        background: url('../img/brush.jpg');
         background-size: cover;
       }
 
@@ -115,9 +113,16 @@ h5 {
       background: rgb(40,40,40);
     }
 
-    #about a:hover {
+    #about .nav-link:hover {
       color: #266377;
     }
+
+    #about .nav-link {
+      color: #2F97BA;
+      font-weight: 300;
+      font-size: 1.5em;
+    }
+
 
     /* PROJECTS */
     #projects {

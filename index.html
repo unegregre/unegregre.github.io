@@ -9,6 +9,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- Add the slick-theme.css if you want default styling -->
@@ -93,7 +94,7 @@
       <div class="container color-secondary-1-0">
         <div class="row text-justify text-white pt-4">
           <div class="col-md-3 py-3 text-center">
-            <img src="./img/Photo_Emilie Hummel.png" alt="" width="85%">
+            <img src="./img/Photo_Emilie Hummel.jpg" alt="" width="85%" style="border: solid #6CD6F9">
           </div>
           <div class="col-md-9 py-4 pr-5 text-justify">
             <h1 class="color-secondary-1-3">Emilie Hummel</h1>
@@ -106,18 +107,21 @@
         <hr class="color-secondary-1-2">
         <div class="row">
           <div class="col-md-4 text-center">
-            <a href="" class="nav-link" target="_blank">
-              <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/emilie-hummel/" class="nav-link" target="_blank">
+              <i class="fab fa-2x fa-linkedin"></i>
+              <p>LinkedIn</p>
             </a>
           </div>
           <div class="col-md-4 text-center">
-            <a href="" class="nav-link" target="_blank">
-              <i class="fab fa-github"></i>
+            <a href="https://github.com/unegregre" class="nav-link" target="_blank">
+              <i class="fab fa-2x fa-github"></i>
+              <p>Github</p>
             </a>
           </div>
           <div class="col-md-4 text-center">
-            <a href="" class="nav-link" target="_blank">
-              <i class="far fa-envelope"></i>
+            <a href="mailto:emilie.hummel@yahoo.fr" class="nav-link">
+              <i class="far fa-2x fa-envelope"></i>
+              <p>Contact Mail</p>
             </a>
           </div>
         </div>
@@ -298,27 +302,27 @@
       var path="./img/dessins/" ;
       // array of the images names
       // to resize: https://www.iloveimg.com/resize-image
-      var images=new Array( "Paysage neige partie 1.png",
-                            "Pull_4INFO_blanc.png",
-                            "Paysage neige partie 2.png",
-                            "Paysage forêt.png",
+      var images=new Array( "Pull_4INFO_blanc.png",
+                            "Paysage neige partie 1.jpg",
+                            "Paysage neige partie 2.jpg",
+                            "Paysage forêt.jpg",
                             "Logo Murder Master.png",
                             "Helper5_blanc.png",
                             "Helper4_blanc.png",
-                            "Affiche FOG16.png",
-                            "Flyer FOG16.png",
-                            "Affiche Killer.png",
-                            "Impa-bg.png",
-                            "Affiche Art-elier.png",
+                            "Affiche FOG16.jpg",
+                            "Flyer FOG16.jpg",
+                            "Affiche Killer.jpg",
+                            "Impa-bg.jpg",
+                            "Affiche Art-elier.jpg",
                             "Logo Tshirt InsaLan.png",
-                            "grenouille.png",
+                            "grenouille.jpg",
+                            "Harley Quinn.jpg",
+                            "Paysage automne.jpg",
                             "Papo & Yo.jpg",
-                            "Harley Quinn.png",
-                            "Dean OGorman.JPG",
-                            "Paysage automne.png");
+                            "Dean OGorman.JPG");
 
-      var titles=new Array( "Paysage enneigé partie 1",
-                            "Sweat de promotion INSA",
+      var titles=new Array( "Sweat de promotion INSA",
+                            "Paysage enneigé partie 1",
                             "Paysage enneigé partie 2",
                             "Paysage de forêt sombre",
                             "Logo t-shirt - FOG 16",
@@ -326,34 +330,34 @@
                             "Logo t-shirt - FOG 16",
                             "Affiche FOG 16",
                             "Flyer FOG 16",
-                            "Affiche Killer 2018",
+                            "Affiche Killer 2019",
                             "Illustration Impa",
                             "Affiche Art-elier",
                             "Logo t-shirt InsaLan",
                             "Grenatite - Personnage fictif",
-                            "Illustration Papo & Yo",
                             "Illustration Harley Quinn",
-                            "Portrait de Dean O'Gorman",
-                            "Paysage automnal");
+                            "Paysage automnal",
+                            "Illustration Papo & Yo",
+                            "Portrait de Dean O'Gorman");
 
-      var dates=new Array(  "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018",
-                            "mai 2018");
+      var dates=new Array(  "Janvier 2020",
+                            "Décembre 2019",
+                            "Décembre 2019",
+                            "Novembre 2019",
+                            "Septembre 2019",
+                            "Août 2019",
+                            "Août 2019",
+                            "Juillet 2019",
+                            "Juillet 2019",
+                            "Janvier 2019",
+                            "Décembre 2018",
+                            "Novembre 2018",
+                            "Novembre 2018",
+                            "Octobre 2017",
+                            "Décembre 2016",
+                            "Septembre 2015",
+                            "Janvier 2015",
+                            "Mai 2014");
       
       var html ="";
       var img = new Image();
