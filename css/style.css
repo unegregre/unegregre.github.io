@@ -20,10 +20,11 @@ body {
   background: url('../img/bg.jpg');
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 75px; 
+  /* margin-top: 75px;  */
   font-size: 1em;
   font: "Raleway" ;
   font-weight: 400;
+  padding-top: 75px;
   }
 
 section {
@@ -111,6 +112,10 @@ h5 {
     /* ABOUT ME */
     #about {
       background: rgb(40,40,40);
+      padding-top: 75px;
+      margin-top: -75px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box;
     }
 
     #about .nav-link:hover {
@@ -127,6 +132,10 @@ h5 {
     /* PROJECTS */
     #projects {
       background: rgb(40,40,40);
+      padding-top: 75px;
+      margin-top: -75px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box;
     }
     
     #projects a:hover {
@@ -148,6 +157,10 @@ h5 {
     /* GRAPHISME */
   #graphism {
     background: rgb(40,40,40);
+    padding-top: 75px;
+    margin-top: -75px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
   }
 
   #graphism a:hover {
