@@ -137,6 +137,10 @@ h5 {
       -webkit-background-clip: content-box;
       background-clip: content-box;
     }
+
+    .btn-outline-light {
+      border-color: #97FFE2;
+    }
     
     #projects a:hover {
       color: #257C64;
