@@ -261,11 +261,26 @@ h5 {
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 1080px) {
     #showcase {
-      min-height: 500px; }
+      font-size: 1rem;}
       #showcase h1 {
         font-size: 4rem; }
+      #navbarCollapse a {
+        font-size: 1rem;
+      }
+
+      }
+
+
+  @media (max-width: 768px) {
+    #showcase {
+      min-height: 500px; 
+      font-size: 0.8rem;}
+      #showcase h1 {
+        font-size: 3rem; }
+
+    
 
   
     .mb-resp {
