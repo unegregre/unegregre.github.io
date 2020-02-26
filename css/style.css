@@ -159,6 +159,7 @@ h5 {
       background: rgb(50,50,50);
       border: solid;
       border-radius: 50%;
+      margin: 0 auto;
     }
 
     .btn-read-more:hover {
@@ -265,6 +266,7 @@ h5 {
       min-height: 500px; }
       #showcase h1 {
         font-size: 4rem; }
+
   
     .mb-resp {
       margin-bottom: 1rem; } }
