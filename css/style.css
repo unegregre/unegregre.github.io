@@ -154,12 +154,16 @@ h5 {
       background-color: #257C64;
     }
 
-    #show-more ~ .label:before {
-      content: 'Show more';
+    .btn-read-more {
+      color: #257C64;
+      background: rgb(50,50,50);
+      border: solid;
+      border-radius: 50%;
     }
-    
-    #show-more ~ .label:before {
-      content: 'Show less';
+
+    .btn-read-more:hover {
+      color: white;
+      background: #2AC096;
     }
   
     /* GRAPHISME */

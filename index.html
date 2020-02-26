@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Ubuntu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -203,11 +203,9 @@
               </div>
             </div>
           </div>
-          
+          <hr class="color-primary-3">
         </div> 
         <div class="collapse mb-5 text-white" id="collapse-btn-1">
-          <hr class="color-primary-3">
-
           <div class="row py-3">
             <div class="col-md-10 offset-md-2 text-right">
               <b class="color-primary-2"><h3>TALIESIN</h3></b>
@@ -300,10 +298,9 @@
             </div>
           </div>
         </div>
-
-        <a href="" class="offset-md-6 " data-toggle="collapse" data-target="#collapse-btn-1" id="show-more">
-          <img src="img/btn.png" width="30" height="30">
-        </a>
+        <div class="offset-md-5 col-md-2 d-none d-md-block text-center py-3">
+          <button type="button" id ="btn-projects" class="btn btn-read-more btn-lg" data-toggle="collapse" data-target="#collapse-btn-1"><span class="fas fa-angle-double-down"></span></button>
+        </div>
       </div>
     </section>
   </div>
@@ -398,21 +395,16 @@
   </script>
 
   <script type="text/javascript">
-    function show_hide() {
-      var stop = document.getElementById("stop");
-      var moreText = document.getElementById("more");
-      var btn = document.getElementById("myBtn");
-
-      if (stop.style.display === "none") {
-        stop.style.display = "inline";
-        btn.innerHTML = "Plus";
-        moreText.style.display = "none";
-      } else {
-        stop.style.display = "none";
-        btn.innerHTML = "Moins";
-        moreText.style.display = "inline";
+    $('#btn-projects').on('click', function (event) {
+      if($('#collapse-btn-1').hasClass('show'))
+      {
+        $('#btn-projects').html('<span class="fas fa-angle-double-up"></span>'); 
       }
-    }
+      else
+      {      
+        $('#btn-projects').html('<span class="fas fa-angle-double-down"></span>'); 
+      }
+    }); 
   </script>
 
 
