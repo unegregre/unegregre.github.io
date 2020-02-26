@@ -138,6 +138,10 @@ h5 {
       background-clip: content-box;
     }
 
+    #img-project {
+      background: white;
+    }
+
     .btn-outline-light {
       border-color: #97FFE2;
     }
