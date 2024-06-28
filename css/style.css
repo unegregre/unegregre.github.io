@@ -128,6 +128,44 @@ h5 {
       font-size: 1.5em;
     }
 
+    /* RESEARCH */
+    #research {
+      background: rgb(40,40,40);
+      padding-top: 75px;
+      margin-top: -75px;
+      -webkit-background-clip: content-box;
+      background-clip: content-box;
+    }
+
+    #img-project {
+      background: white;
+    }
+
+    .btn-outline-light {
+      border-color: #97FFE2;
+    }
+    
+    #research a:hover {
+      color: #257C64;
+    }
+
+    #header-research {
+      background-color: #257C64;
+    }
+
+    .btn-read-more {
+      color: #257C64;
+      background: rgb(50,50,50);
+      border: solid;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    .btn-read-more:hover {
+      color: white;
+      background: #2AC096;
+    }
+
 
     /* PROJECTS */
     #projects {
