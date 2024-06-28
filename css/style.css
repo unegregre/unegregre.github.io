@@ -1,28 +1,60 @@
-.color-primary-0 { color: #42E9BB }	/* Main Primary color */
-.color-primary-1 { color: #97FFE2 }
-.color-primary-2 { color: #66FAD1 }
-.color-primary-3 { color: #2AC096 }
-.color-primary-4 { color: #257C64 }
+.color-primary-0 { color: #44a3de }	/* Main Primary color */
+.color-primary-1 { color: #3886ba }
+.color-primary-2 { color: #2d6b94 }
+.color-primary-3 { color: #1d455e }
+.color-primary-4 { color: #153245 }
 
-.color-secondary-1-0 { color: #47BFE7 }	/* Main Secondary color (1) */
-.color-secondary-1-1 { color: #9BE6FF }
-.color-secondary-1-2 { color: #6CD6F9 }
-.color-secondary-1-3 { color: #2F97BA }
-.color-secondary-1-4 { color: #266377 }
+.color-secondary-1-0 { color: #41ddc8 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #36b7a5 }
+.color-secondary-1-2 { color: #2b9183 }
+.color-secondary-1-3 { color: #1b5d54 }
+.color-secondary-1-4 { color: #14443d }
 
-.color-secondary-2-0 { color: #44EF71 }	/* Main Secondary color (2) */
-.color-secondary-2-1 { color: #97FFB3 }
-.color-secondary-2-2 { color: #67FB8E }
-.color-secondary-2-3 { color: #29AA49 }
-.color-secondary-2-4 { color: #2A8E44 }
+.color-secondary-2-0 { color: #43de79 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #37b864 }
+.color-secondary-2-2 { color: #2c9250 }
+.color-secondary-2-3 { color: #1c5e34 }
+.color-secondary-2-4 { color: #144526 }
+
+
+.color-highlight-0 { color: #b73346 }   /* highlight color */
+.color-highlight-1 { color: #932d3b }
+.color-highlight-2 { color: #5d1a24 }
+
+:root {
+  --color-primary-0: #44a3de;
+  --color-primary-1: #3886ba;
+  --color-primary-2: #2d6b94;
+  --color-primary-3: #1d455e;
+  --color-primary-4: #153245;
+
+  --color-secondary-1-0: #41ddc8;	/* Main Secondary color (1) */
+  --color-secondary-1-1: #36b7a5;
+  --color-secondary-1-2: #2b9183;
+  --color-secondary-1-3: #1b5d54;
+  --color-secondary-1-4: #14443d;
+
+  --color-secondary-2-0: #43de79;	/* Main Secondary color (2) */
+  --color-secondary-2-1: #37b864;
+  --color-secondary-2-2: #2c9250;
+  --color-secondary-2-3: #1c5e34;
+  --color-secondary-2-4: #144526;
+
+
+  --color-highlight-0: #b73346;   /* highlight color */
+  --color-highlight-1: #932d3b;
+  --color-highlight-2: #5d1a24;
+}
+
+
 
 body {
-  background: url('../img/bg.jpg');
+  background: #383838;
   background-size: cover;
   background-attachment: fixed;
   /* margin-top: 75px;  */
   font-size: 1em;
-  font: "Raleway" ;
+  font: "Raleway";
   font-weight: 400;
   padding-top: 75px;
   }
@@ -35,6 +67,7 @@ hr {
   border: 0;
   border-top: 1px solid;
   width: 70%;
+  color: var(--color-highlight-1);
 }
 
 a:hover {
@@ -58,11 +91,11 @@ h5 {
 }
 
 #main-footer {
-  background: #257C64;
+  background: #2b9183;
 }
   
     .navbar {
-      box-shadow: 2px 2px 5px #257C64;
+      box-shadow: 2px 2px 5px var(--color-secondary-1-2);
       opacity: 0.9;
       background: #fff;}
     .navbar .nav-item{
@@ -72,7 +105,7 @@ h5 {
       color: #ddd;
     }
     .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-      color: #257C64;
+      color: var(--color-secondary-1-2);
     }
   
   #showcase {
@@ -80,7 +113,7 @@ h5 {
   }
 
   #showcase p {
-    font: "Raleway" ;
+    font: "Raleway";
     font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 2px;
@@ -119,11 +152,11 @@ h5 {
     }
 
     #about .nav-link:hover {
-      color: #266377;
+      color: var(--color-primary-0);
     }
 
     #about .nav-link {
-      color: #2F97BA;
+      color: var(--color-primary-1);
       font-weight: 300;
       font-size: 1.5em;
     }
@@ -137,24 +170,36 @@ h5 {
       background-clip: content-box;
     }
 
+    .title-research {
+      color: var(--color-secondary-1-0);
+    }
+
+    .article {
+      color: var(--color-secondary-1-2);
+    }
+
     #img-research {
       background: white;
     }
 
     .btn-outline-light {
-      border-color: #97FFE2;
+      border-color: var(--color-primary-0);
     }
     
     #research a:hover {
-      color: #257C64;
+      color: var(--color-highlight-1);
+    }
+
+    #research a {
+      color: rgb(182, 182, 182);
     }
 
     #header-research {
-      background-color: #257C64;
+      background-color: var(--color-secondary-1-2);
     }
 
     .btn-read-more {
-      color: #257C64;
+      color: var(--color-secondary-1-2);
       background: rgb(50,50,50);
       border: solid;
       border-radius: 50%;
@@ -163,7 +208,7 @@ h5 {
 
     .btn-read-more:hover {
       color: white;
-      background: #2AC096;
+      background: var(--color-secondary-1-1);
     }
 
 
@@ -181,19 +226,27 @@ h5 {
     }
 
     .btn-outline-light {
-      border-color: #97FFE2;
+      border-color: var(--color-secondary-2-0);
+    }
+
+    .title-project {
+      color: var(--color-secondary-2-0);
+    }
+
+    .friends {
+      color: var(--color-secondary-2-2);
     }
     
     #projects a:hover {
-      color: #257C64;
+      color: var(--color-highlight-1);
     }
 
     #header-project {
-      background-color: #257C64;
+      background-color: var(--color-secondary-2-2);
     }
 
     .btn-read-more {
-      color: #257C64;
+      color: var(--color-secondary-2-2);
       background: rgb(50,50,50);
       border: solid;
       border-radius: 50%;
@@ -202,7 +255,7 @@ h5 {
 
     .btn-read-more:hover {
       color: white;
-      background: #2AC096;
+      background: var(--color-secondary-2-1);
     }
   
     /* GRAPHISME */
@@ -215,11 +268,11 @@ h5 {
   }
 
   #graphism a:hover {
-    color: #2A8E44;
+    color: var(--color-primary-0);
   }
 
   #header-graphism {
-    background-color: #2A8E44;
+    background-color: var(--color-primary-2);
   }
 
   /* Modal popup for image visualisation */
@@ -269,12 +322,12 @@ h5 {
   }
 
   .card-body {
-    border: solid 1px #29AA49;
+    border: solid 1px var(--color-primary-1);
     padding: 0.5em;
   }
 
   .thumbnail:hover {
-    opacity: 0.7 ;
+    opacity: 0.7;
   }
 
   .thumbnail {
